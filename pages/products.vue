@@ -1,7 +1,7 @@
 <template>
   <div id="category">
     <SfHeader
-      title="BCVueNuxt"
+      title="Tommy John"
     >
       <template #navigation>
         <SfHeaderNavigationItem>
@@ -68,9 +68,9 @@ export default {
   async asyncData ({ params }) {
     const result = await axios({
       method: 'POST',
-      url: 'https://kari-morars-store.mybigcommerce.com/graphql',
+      url: 'https://tommyjohn-poc.mybigcommerce.com/graphql',
       headers: {
-        Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJlYXQiOjIxMzM0NDM2NjEsInN1Yl90eXBlIjoyLCJ0b2tlbl90eXBlIjoxLCJjb3JzIjpbImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMCJdLCJjaWQiOjEsImlhdCI6MTU4MjYxNTM2Mywic3ViIjoidGl5N3Fncm54NWIxbzAzcTRzcmJ2MXR6aXltNTlrZiIsInNpZCI6MTAwMDk5MDM1OSwiaXNzIjoiQkMifQ.GoN-AmBQXWGS_xA6GUaKI_OcxPH8mPIQLhbElBaH4gTBv4o1jb_xTKl3D1dwZZsSO8QKspPjlSE-ousLRnX2tA'
+        Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJlYXQiOjE2NDA4MzQ5NTEsInN1Yl90eXBlIjoyLCJ0b2tlbl90eXBlIjoxLCJjb3JzIjpbImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMCJdLCJjaWQiOjEsImlhdCI6MTYwOTM1OTc0Miwic3ViIjoiam16czV6cXRvbHh3Y28wNWM0MXBoMjNsc3JyeWVhZCIsInNpZCI6MTAwMDg2MTQyOSwiaXNzIjoiQkMifQ.ytbw9pVzObiPz1hatlgXc8mrxew6d-R7cdlJUiDCV1rirDZI1gQ-h4wSryJQjHLZDtniYp_UtCij62XpgGYUuw'
       },
       data: {
         query: `
@@ -89,6 +89,7 @@ export default {
                           path
                           defaultImage {
                             url(width: 216, height: 326)
+                            altText
                           }
                           prices {
                             price {

@@ -5,9 +5,22 @@
 </template>
 
 <style>
+@font-face {
+  font-family: "Basetica";
+  src: url("/assets/fonts/basetica-regular.woff")
+    format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Basetica";
+  src: url("/assets/fonts/basetica-bold.woff")
+    format("woff");
+  font-weight: 700;
+}
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Basetica', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

@@ -1,7 +1,9 @@
 <template>
+
   <div id="home">
+
     <SfHeader
-      title="BCVueNuxt"
+      title="Tommy John"
     >
       <template #navigation>
         <SfHeaderNavigationItem>
