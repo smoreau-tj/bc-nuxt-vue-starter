@@ -3,6 +3,7 @@ export default {
   /*
   ** Headers of the page
   */
+  target: 'static',
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -33,7 +34,7 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
+    '@nuxtjs/eslint-module'
   ],
   /*
   ** Nuxt.js modules
@@ -41,7 +42,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    '@nuxtjs/pwa'
   ],
   /*
   ** Axios module configuration
@@ -58,6 +59,15 @@ export default {
     */
     transpile: [/^@storefront-ui/],
     extend (config, ctx) {
+    },
+    postcss: {
+      plugins: {
+        'postcss-url': false,
+        'postcss-hexrgba': {}
+      },
+      preset: {
+        autoprefixer: { grid: true }
+      }
     }
   }
 }
