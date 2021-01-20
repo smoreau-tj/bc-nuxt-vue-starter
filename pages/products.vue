@@ -154,7 +154,7 @@ export default {
     position: absolute;
     bottom: 0;
     left: $spacer-big;
-    width: calc(100% - calc($spacer-big * 2));
+    width: calc(100% - calc(#{$spacer-big} * 2));
     height: 1px;
     background-color: $c-light;
     content: "";
@@ -292,7 +292,7 @@ export default {
 .filters {
   padding: $spacer-big;
   &__title {
-    margin: calc($spacer-big * 3) 0 $spacer-big;
+    margin: calc(#{$spacer-big} * 3) 0 $spacer-big;
     font-size: $font-size-big-mobile;
     line-height: 1.6;
     &:first-child {
@@ -309,7 +309,7 @@ export default {
     }
   }
   &__buttons {
-    margin: calc($spacer-big * 3) 0 0 0;
+    margin: calc(#{$spacer-big} * 3) 0 0 0;
   }
   &__button-clear {
     color: #a3a5ad;

@@ -325,7 +325,7 @@ export default {
   margin: $spacer-big 0;
   box-sizing: border-box;
   @include for-desktop {
-    margin: calc($spacer-extra-big * 2) 0;
+    margin: calc(#{$spacer-extra-big} * 2) 0;
   }
 }
 .banner-central {
@@ -378,7 +378,7 @@ export default {
   &__row {
     display: flex;
     & + & {
-      margin-top: calc($spacer-big / 2);
+      margin-top: calc(#{$spacer-big} / 2);
       @include for-desktop {
         margin-top: $spacer-big;
       }
@@ -388,7 +388,7 @@ export default {
     margin: 0;
     flex: 1;
     & + & {
-      margin-left: calc($spacer-big / 2);
+      margin-left: calc(#{$spacer-big} / 2);
       @include for-desktop {
         margin-left: $spacer-big;
       }

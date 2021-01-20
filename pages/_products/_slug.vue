@@ -445,7 +445,7 @@ export default {
   &__row {
     display: flex;
     & + & {
-      margin-top: calc($spacer-big / 2);
+      margin-top: calc(#{$spacer-big} / 2);
       @include for-desktop {
         margin-top: $spacer-big;
       }
@@ -455,7 +455,7 @@ export default {
     margin: 0;
     flex: 1;
     & + & {
-      margin-left: calc($spacer-big / 2);
+      margin-left: calc(#{$spacer-big} / 2);
       @include for-desktop {
         margin-left: $spacer-big;
       }
@@ -473,7 +473,7 @@ export default {
   &__description {
     padding: 0 $spacer-big;
     @include for-desktop {
-      margin-left: calc($spacer-big * 5);
+      margin-left: calc(#{$spacer-big} * 5);
     }
   }
 }
@@ -501,7 +501,7 @@ export default {
 .product-details {
   &__action {
     display: flex;
-    margin: $spacer-big 0 calc($spacer-big / 2);
+    margin: $spacer-big 0 calc(#{$spacer-big} / 2);
     @include for-desktop {
       justify-content: flex-end;
     }
@@ -519,7 +519,7 @@ export default {
     margin-bottom: $spacer-big;
   }
   &__description {
-    margin: $spacer-extra-big 0 calc($spacer-big * 3) 0;
+    margin: $spacer-extra-big 0 calc(#{$spacer-big} * 3) 0;
     font-family: $body-font-family-secondary;
     font-size: $font-size-regular-mobile;
     line-height: 1.6;
@@ -575,15 +575,15 @@ export default {
   }
   &__sub-price {
     flex-basis: 100%;
-    margin-top: calc($spacer-big / 4);
+    margin-top: calc(#{$spacer-big} / 4);
     @include for-desktop {
       flex-basis: auto;
-      margin-top: calc($spacer-big / 2);
+      margin-top: calc(#{$spacer-big} / 2);
     }
   }
   &__sub-rating {
     display: flex;
-    margin-top: calc($spacer-big / 2);
+    margin-top: calc(#{$spacer-big} / 2);
     @include for-desktop {
       margin-left: auto;
     }
@@ -603,7 +603,7 @@ export default {
   &__tabs {
     margin-top: $spacer-big;
     @include for-desktop {
-      margin-top: calc(5 * $spacer-big);
+      margin-top: calc(5 * #{$spacer-big});
     }
     p {
       margin: 0;
