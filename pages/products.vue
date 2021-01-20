@@ -70,7 +70,7 @@ export default {
       method: 'POST',
       url: 'https://tommyjohn-poc.mybigcommerce.com/graphql',
       headers: {
-        Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJlYXQiOjE2NDA4MzQ5NTEsInN1Yl90eXBlIjoyLCJ0b2tlbl90eXBlIjoxLCJjb3JzIjpbImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMCJdLCJjaWQiOjEsImlhdCI6MTYwOTM1OTc0Miwic3ViIjoiam16czV6cXRvbHh3Y28wNWM0MXBoMjNsc3JyeWVhZCIsInNpZCI6MTAwMDg2MTQyOSwiaXNzIjoiQkMifQ.ytbw9pVzObiPz1hatlgXc8mrxew6d-R7cdlJUiDCV1rirDZI1gQ-h4wSryJQjHLZDtniYp_UtCij62XpgGYUuw'
+        Authorization: `Bearer ${process.env.TOKEN}`
       },
       data: {
         query: `
